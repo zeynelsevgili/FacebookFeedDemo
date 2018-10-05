@@ -28,52 +28,49 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func viewDidLoad() {
         
-        let postBismillah = Post()
-        postBismillah.name = "Bismillah Her Hayrın Başıdır."
-        postBismillah.statusText = "Hadi inşallah olacak. Ya Fettah yolları ancak sen açarsın. Sen yol gösterirsin"
-        postBismillah.profileImageName = "zuckprofile"
-        //postBismillah.statusImageName = "zuckdog"
-        postBismillah.numLikes = 300
-        postBismillah.numComments = 53
-        postBismillah.statusImageUrl = "https://s3-us-west-2.amazonaws.com/letsbuildthatapp/mark_zuckerberg_background.jpg"
+        let zuckContent = Post()
+        zuckContent.name = "Mark Zuckerberg Profili"
+        zuckContent.statusText = "Bu kısım Mark Zuckerberg ile ilgilidir.Lorem ipsum dolor sit amet, cu mollis expetenda temporibus nam, sint graece deleniti est an. Sint choro meliore te vix, est ea laoreet suscipiantur. Vis dictas corrumpit id, te feugiat nominavi cum, at vis propriae voluptua volutpat. Erroribus salutatus ius ea, eu vel minim prompta tacimates. Ea duo novum oratio regione, eam adipisci interesset cu."
+        zuckContent.profileImageName = "zuckprofile"
+        zuckContent.numLikes = 300
+        zuckContent.numComments = 53
+        zuckContent.statusImageUrl = "https://s3-us-west-2.amazonaws.com/letsbuildthatapp/mark_zuckerberg_background.jpg"
 
 
-        let postElhamdülillah = Post()
-        postElhamdülillah.name = "Ahirde Elhamdüilillhah. Unutma!"
-        postElhamdülillah.statusText = "Buraya steve jobs ile ilgili kısım gelecek inşallah.Buraya steve jobs ile ilgili kısım gelecek inşallah. Buraya steve jobs ile ilgili kısım gelecek inşallah.Buraya steve jobs ile ilgili kısım gelecek inşallah.Buraya steve jobs ile ilgili kısım gelecek inşallah. Buraya steve jobs ile ilgili kısım gelecek inşallah. "
-        postElhamdülillah.profileImageName = "steve_profile"
-        //postElhamdülillah.statusImageName = "steve_status"
-        postElhamdülillah.numLikes = 1500
-        postElhamdülillah.numComments = 593
-        postElhamdülillah.statusImageUrl = "https://s3-us-west-2.amazonaws.com/letsbuildthatapp/steve_jobs_background.jpg"
+        let steveContent = Post()
+        steveContent.name = "Steve Jobs Profili"
+        steveContent.statusText = "Bu kısım Steve Jobs ile ilgilidir"
+        steveContent.profileImageName = "steve_profile"
+        steveContent.numLikes = 1500
+        steveContent.numComments = 593
+        steveContent.statusImageUrl = "https://s3-us-west-2.amazonaws.com/letsbuildthatapp/steve_jobs_background.jpg"
 
 
 
 
-        let postAllahuEkber = Post()
-        postAllahuEkber.name = "Ahirde Elhamdüilillhah. Unutma!"
-        postAllahuEkber.statusText = "Buraya gandhi ile ilgili kısım gelecek inşallah.Buraya gandhi ile ilgili kısım gelecek inşallah. Buraya gandhi ile ilgili kısım gelecek inşallah. "
-        postAllahuEkber.profileImageName = "gandhi_profile"
-        //postAllahuEkber.statusImageName = "gandhi_status"
-        postAllahuEkber.numLikes = 250
-        postAllahuEkber.numComments = 17
-        postAllahuEkber.statusImageUrl = "https://s3-us-west-2.amazonaws.com/letsbuildthatapp/gandhi_status.jpg"
+        let gandhiContent = Post()
+        gandhiContent.name = "Gandhi Profili"
+        gandhiContent.statusText = "Bu kısım Gandhi ile ilgilidir. Lorem ipsum dolor sit amet, cu mollis expetenda temporibus nam, sint graece deleniti est an. Sint choro meliore te vix, est ea laoreet suscipiantur. Vis dictas corrumpit id, te feugiat nominavi cum, at vis propriae voluptua volutpat. Erroribus salutatus ius ea, eu vel minim prompta tacimates. Ea duo novum oratio regione, eam adipisci interesset cu."
+        gandhiContent.profileImageName = "gandhi_profile"
+        gandhiContent.numLikes = 250
+        gandhiContent.numComments = 17
+        gandhiContent.statusImageUrl = "https://s3-us-west-2.amazonaws.com/letsbuildthatapp/gandhi_status.jpg"
 
 
-        let denemeBos = Post()
-        denemeBos.name = "Ahirde Elhamdüilillhah. Unutma!"
-        denemeBos.statusText = "Buraya gandhi ile ilgili kısım gelecek inşallah.Buraya gandhi ile ilgili kısım gelecek inşallah. Buraya gandhi ile ilgili kısım gelecek inşallah. "
-        denemeBos.profileImageName = "gandhi_profile"
-        denemeBos.statusImageUrl = "https://cdn.geekwire.com/wp-content/uploads/2018/03/Bill-and-Phoebe-Gates_August-2017_Courtesy-Gates-Family-630x518.jpg"
+        let billContent = Post()
+        billContent.name = "Bill Gates Profili"
+        billContent.statusText = "Bu kısım Bill Gates ile ilgilidir. Lorem ipsum dolor sit amet, cu mollis expetenda temporibus nam, sint graece deleniti est an. Sint choro meliore te vix, est ea laoreet suscipiantur. Vis dictas corrumpit id, te feugiat nominavi cum, at vis propriae voluptua volutpat. Erroribus salutatus ius ea, eu vel minim prompta tacimates. Ea duo novum oratio regione, eam adipisci interesset cu."
+        billContent.profileImageName = "bill_profile"
+        billContent.statusImageUrl = "https://cdn.geekwire.com/wp-content/uploads/2018/03/Bill-and-Phoebe-Gates_August-2017_Courtesy-Gates-Family-630x518.jpg"
 
-        denemeBos.numLikes = 250
-        denemeBos.numComments = 17
+        billContent.numLikes = 250
+        billContent.numComments = 17
 
 
-        postNameArray.append(postBismillah)
-        postNameArray.append(postElhamdülillah)
-        postNameArray.append(postAllahuEkber)
-        postNameArray.append(denemeBos)
+        postNameArray.append(zuckContent)
+        postNameArray.append(steveContent)
+        postNameArray.append(gandhiContent)
+        postNameArray.append(billContent)
         
         // hem memory hem de disk için yer ayırıyoruz. 500 mb a kadar verilerimizi cache leyebileceğiz.
         let memoryCapacity = 500*1024*1024
@@ -351,7 +348,7 @@ class FeedCell: UICollectionViewCell {
     let statusTextView: UITextView = {
         
         let textView = UITextView()
-        textView.text = "Hadi inşallah olacak. Ya Fettah yolları ancak sen açarsın. Sen yol gösterirsin"
+        textView.text = "Deneme"
         textView.font = UIFont.systemFont(ofSize: 12)
         textView.isScrollEnabled = false
         return textView
